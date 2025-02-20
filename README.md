@@ -1,8 +1,8 @@
-# 🚀 Fine-Tuning and Pretraining Large Language Models
+# 🚀 Faizan's LLM: Building a Large Language Model from scratch , then pretraining and fine-Tuning the Large Language Model for Classification and Instruction.
 
 ## 🌟 Overview
 
-This repository contains code and documentation for fine-tuning and pretraining Transformer-based Large Language Models (LLMs). It covers essential topics such as:
+This repository contains code and documentation for the Large Language Model I built from scratch. I then fine-tunied the LLM after pretraining the Transformer-based Large Language Models (LLMs). It covers essential topics such as:
 
 - 🏆 Fine-tuning for classification and instruction-following tasks
 - 📚 Pretraining a Transformer model from scratch
@@ -28,6 +28,7 @@ This repository contains code and documentation for fine-tuning and pretraining 
 ├── finetuninginstruction.ipynb     # Fine-tuning for instruction following
 ├── pretraining.ipynb               # Pretraining a Transformer from scratch
 ├── transformer.ipynb               # Transformer architecture implementation
+├── LLMcore.py                      # Core classes and functions for the LLM 
 ├── README.md                        # Documentation
 ```
 
@@ -38,7 +39,10 @@ Ensure you have the required dependencies installed before running the notebooks
 ```bash
 pip install torch transformers datasets
 ```
-
+🔹 Fine-Tuning Classification ModelThe classification fine-tuning was performed using GPT-2 124M parameters, with pretrained weights loaded before fine-tuning.
+Run the finetuningclassification.ipynb notebook to train a Transformer-based classifier.
+🔹 Fine-Tuning for Instruction FollowingThe instruction fine-tuning was performed on GPT-2 300M medium parameters, using pretrained weights loaded before fine-tuning.
+Use the finetuninginstruction.ipynb notebook to fine-tune an LLM for instruction-following tasks.
 ## 📌 Usage
 
 ### 🔹 Fine-Tuning Classification Model
@@ -67,10 +71,14 @@ The `transformer.ipynb` notebook provides an in-depth implementation of Transfor
 
 ### 🎯 Model Performance and Evaluation
 
-- **✅ Accuracy Scores**: 
+- **✅ Accuracy Scores for the classification fine tuned LLM**: 
   - Training Accuracy: **94.81%**
   - Validation Accuracy: **96.53%**
   - Test Accuracy: **92.57%**
+ 
+  -  **✅ Accuracy Scores for the instruction fine tuned LLM**: 
+  - Accuracy Score: **45.84* as adjudicated by 'gpt 3.5 turbo' LLM model.
+  - Room for improvement via modulation of the hyperparameters- learning rate, batch size, cosine decay and LoRA and model size.
 
   ![Training Accuracy](https://github.com/SYEDFAIZAN1987/Faizan-s-LLM--Building-an-LLM-from-scratch-and-fine-tuning-for-classification-and-instruction/blob/main/Accuracy%20score%20adjudicated%20by%20gpt%203.5%20turbo.png)
 
@@ -111,10 +119,10 @@ LoRA is implemented to enable efficient fine-tuning with minimal computational c
 - 📖 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. *Advances in Neural Information Processing Systems*, 30.
 - 📖 Radford, A., Narasimhan, K., Salimans, T., & Sutskever, I. (2018). Improving language understanding by generative pre-training.
 - 📖 Hu, E. J., Wang, Y., Singh, A., Wang, Z., Yu, K., & Ainsworth, S. (2021). LoRA: Low-Rank Adaptation of Large Language Models.
-- 📖 Sebastian Raschka. *LLMs from Scratch*.
-- 📖 Jay Alammar. *Visualizing Transformers*.
-- 📖 Andrej Karpathy. *Training Transformers*.
-- 📖 Krish Naik. *Machine Learning and Deep Learning Tutorials*.
+- 📖 Sebastian Raschka. *Building an LLM from Scratch*.
+- 📖 Jay Alammar and Maarten Grootendorst. Hands-On Large Language Models: Language Understanding and Generation.
+- 📖 Andrej Karpathy. *Building a Chat-GPT*. Youtube
+- 📖 Krish Naik. *Machine Learning and Deep Learning Tutorials*. Youtube and Udemy.
 
 ## 💡 Contributing
 
@@ -124,6 +132,6 @@ LoRA is implemented to enable efficient fine-tuning with minimal computational c
 
 This project is licensed under the **MIT License**.
 
-🚀 **Happy Fine-Tuning!** 🎯
+
 
 
