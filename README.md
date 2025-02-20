@@ -1,4 +1,4 @@
-# 🚀 Faizan's LLM: Building a Large Language Model from scratch 
+# 🚀 Faizan's LLM: Building a Large Language Model from scratch: 
 **then pretraining and fine-Tuning the Large Language Model for Classification and Instruction.**
 
 ## 🌟 Overview
