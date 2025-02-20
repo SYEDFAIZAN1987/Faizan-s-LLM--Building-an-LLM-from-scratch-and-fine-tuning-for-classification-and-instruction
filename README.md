@@ -22,14 +22,18 @@ This repository contains code and documentation for the Large Language Model I b
 - **🛡️ Gradient Clipping**: Prevent exploding gradients during training.
 - **⚙️ Transformer Architecture**: Custom implementation of multi-head attention, layer normalization, and feed-forward networks.
 
-## 📂 Folder Structure
+## 📂 Folder Structure - The files must be studied in the following order
 
 ```
+
+├── dataprocessing.ipynb            # Processing the data for the LLM
+├── transformer.ipynb               # Transformer architecture implementation
+├── LLMcore.py                      # Core classes and functions for the LLM
+├── gpt_download.py                 # Dowload the gpt pretrained model parameters
+├── pretraining.ipynb               # Pretraining a Transformer from scratch
+├── weightloading.ipynb             # Load the weights fom the pretrained model
 ├── finetuningclassification.ipynb  # Fine-tuning on classification tasks
 ├── finetuninginstruction.ipynb     # Fine-tuning for instruction following
-├── pretraining.ipynb               # Pretraining a Transformer from scratch
-├── transformer.ipynb               # Transformer architecture implementation
-├── LLMcore.py                      # Core classes and functions for the LLM 
 ├── README.md                        # Documentation
 ```
 
