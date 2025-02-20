@@ -1,0 +1,2 @@
+# Faizan-s-LLM--Building-an-LLM-from-scratch-and-fine-tuning-for-classification-and-instruction
+This repository contains code and documentation for fine-tuning and pretraining Transformer-based Large Language I built an LLM from scratch, fine tuned it for classification and instructio. I pretrained a Transformer model from scratch.Low-Rank Adaptation (LoRA) for fine-tuning was used. Detailed implementation of Transformer architecture.
